@@ -41,7 +41,7 @@ public class UserController {
 
     @ResponseBody
     @PostMapping("/register")
-    public Response register(@RequestParam("username") String username, @RequestParam("pwd") String pwd) {
+    public Response register(String username,String pwd) {
         Response response = new Response();
 
         // 注册之前，判断用户名是否已存在
