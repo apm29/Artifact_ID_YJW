@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW.iml" filepath="$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW_main.iml" group="Artifact_ID_YJW" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Artifact_ID_YJW_test.iml" group="Artifact_ID_YJW" />
+    </modules>
+  </component>
+</project>
