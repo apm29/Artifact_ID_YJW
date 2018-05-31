@@ -1,5 +1,6 @@
 package com.yjw.shirly.controller;
 
+import com.yjw.shirly.model.ConstKt;
 import com.yjw.shirly.model.bean.Response;
 import com.yjw.shirly.model.bean.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,17 +20,17 @@ public class UserController {
         // 先判断用户名是否存在，给定不同Code用于区分不同错误
         boolean isExist = userService.isExist(username);
         if(!isExist) {
-            response.setCode(Response.CODE_USER_NOT_EXIST);
+            response.setCode(ConstKt.CODE_USER_NOT_EXIST);
             response.setMsg("用户不存在或密码错误");
         }else {
             // 判断用户名和密码是否匹配
             boolean isMatch = userService.isExist(username,pwd);
 
             if (!isMatch) {
-                response.setCode(Response.CODE_USER_PWD_ERR);
+                response.setCode(ConstKt.CODE_USER_PWD_ERR);
                 response.setMsg("用户不存在或密码错误");
             }else {
-                response.setCode(Response.CODE_USER_LOGIN_SUCCESS);
+                response.setCode(ConstKt.CODE_USER_LOGIN_SUCCESS);
                 response.setMsg("登陆成功");
             }
         }
@@ -47,7 +48,7 @@ public class UserController {
         // 注册之前，判断用户名是否已存在
         boolean isExist = userService.isExist(username);
         if(isExist) {
-            response.setCode(Response.CODE_USER_HAS_EXIST);
+            response.setCode(ConstKt.CODE_USER_HAS_EXIST);
             response.setMsg("用户名已存在");
         } else {
             userService.saveUser(username, pwd);

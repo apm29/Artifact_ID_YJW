@@ -27,6 +27,11 @@
         <servlet-name>/</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>/</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
  <!--上面这部分配置主要是使用Spring MVC的DispatcherServlet完成请求的拦截分发。配置文件中引用了另外一个配置文件app-context.xml，这个配置文件主要是完成Spring的依赖注入。-->
